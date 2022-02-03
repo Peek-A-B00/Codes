@@ -1,0 +1,1 @@
+To get from e2 to e4 takes 2 knight moves.

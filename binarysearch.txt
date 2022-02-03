@@ -1,0 +1,16 @@
+ int high=nums.size();
+        int low=0,mid;
+        
+        while(low<high)
+        {
+            mid=low+high/2;
+            if(target>nums[mid])
+                low=mid+1;
+            else
+                high=mid;
+        }
+        if(nums[low]==target)
+            printf("%d exists in nums and its index is %d",target,low);
+        else
+            printf("%d does not exist in nums so return -1",target);
+       
