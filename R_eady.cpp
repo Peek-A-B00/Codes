@@ -41,17 +41,22 @@ int main()
 {
 ///    freopen("in.txt","r",stdin);
 ///    freopen("out.txt","w",stdout);
-    int ara [100];
-    for(int i=0; i<10; i++)
-        ara[i]=i;
+//    int ara [100];
+//    for(int i=0; i<10; i++)
+//        ara[i]=i;
+//
+////    int s=ara.size();
+////    string s="tabassum maria";
+////    int m=9;
+////    int i=s.find(m);
+////    if(i==-1)
+////        deb(m);
+//
+//    printf("%s",str2);
 
-//    int s=ara.size();
-//    string s="tabassum maria";
-//    int m=9;
-//    int i=s.find(m);
-//    if(i==-1)
-//        deb(m);
-
-    printf("%s",str2);
+    char str[Size];
+    scanf("%s",&str[1]);
+    for(int i=1; i<=5;i++)
+        deb(str[i]);
     return 0;
 }

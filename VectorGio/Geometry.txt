@@ -1,0 +1,15 @@
+#1.No, not all intersecting lines are perpendicular to each other
+
+#2.intersecting point (x,y) of two straight lines: a1x+b1x+c1=0 & a2x+b2y+c2=0 
+
+-> x=b1c2-b2c1/a1b2-a2b1 ; y=c1a1-c2a1/a1b2 -a2b1
+
+b.if a1x+b1x=c1 & a2x+b2y=c2 
+
+-> x=b1(-c2)-b2(-c1))/a1b2-a2b1; y =(-c1*a2-(-c2)a1)/(a1*b2-a2*b1)
+
+#3. Equation of a Line in Two-Point Form
+	-(y1-y2)x+(x1-x2)y= c (constant) (for intersecting point use eq 2=>b)
+	
+#4. if three point are in the same line p1(x1,y1),p2(x2,y2),p3(x3,y3)
+	=> y1-y2/y1-y3 = x1-x2/x1-x3

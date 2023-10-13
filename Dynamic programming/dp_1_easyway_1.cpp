@@ -45,15 +45,17 @@ LL memo[Size];
 
 LL go(int c)
 {
-    if(c==N)return 1;
-    if(c>N) return 0;
+    if(c==N){ deb(1);return 1;}
+    if(c>N){deb(0) return 0;}
 
     if(memo[c] != -1)return memo[c];
     memo[c] = 0;
-
+//    debug(memo[c]);
     for(int i=0;i<m;i++)
     {
+        debug(memo[c],myMove[i],c);
         memo[c]+=go(c + myMove[i]);
+        debug(memo[c]);
     }
 
     return memo[c];

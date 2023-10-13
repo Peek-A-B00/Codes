@@ -75,12 +75,13 @@ void MergeSort(int ar[],int low ,int high)
     MergeSort(ar,mid+1,high);
 
     debug(low,mid,high);
+    deb(1)
     Merge(ar,low ,mid ,high);
 }
 
 int main()
 {
-    freopen("MergeSortInput.in","r",stdin);
+//    freopen("MergeSortInput.in","r",stdin);
 
     int ara[SZ];
     int i,n;

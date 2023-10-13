@@ -20,30 +20,18 @@ bool Ycs(char s[])
         d=r*10+dig;
         r=d%11;
     }
-
-    return r==0;
+    return r;
 }
-
 char str[100000];
-
 int main()
 {
-
-//    freopen("in.txt","r",stdin);
-//    freopen("out.txt","w",stdout);
-
     while(1==scanf("%s",str)&& strcmp(str, "0"))    /// if 'A line containing the number ‘0’ is end of the input'.
-    {
-                                                    /// str[0]==0 or strcmp(str,"0")   .
+    {                                                  /// str[0]==0 or strcmp(str,"0")   .
         bool b =Ycs(str);
-
-        if(b){
+        if(!b)
             printf("%s is a multiple of 11.\n",str);
-        }
-        else{
+        else
             printf("%s is not a multiple of 11.\n",str);
-        }
     }
-
     return 0;
 }

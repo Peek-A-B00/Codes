@@ -58,19 +58,40 @@ int main()
 
     int x = 2147483647+2;
     cout<<x<<endl;
+class Check
+{
+     public:
+        int id;
+        void passobject()
+        {
+            int a=returnobject(id);
+            cout<<"Minimum Value is:"<<a<<endl;
+        }
+        int returnobject(int m)
+        {
+           m=id;
+           return m;
+        }
 
+        Check(int x,double y)
+        {
+            if(x>y)
+                id=y;
+            else
+                id=x;
 
-//    int tks,ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-////        printf("Case %d: ",ks++);
-//    }
+        }
+} ;
 
-//    while(1==scanf("",&))
-//    {
-//        printf("\n");
-//    }
+int main()
+{
+    Check Hamza(101,50);
 
-    return 0;
+    Hamza.passobject();
+
+    Check Amir(45,999);
+
+    Amir.passobject();
+
+    getch();
 }

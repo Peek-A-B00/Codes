@@ -64,7 +64,7 @@ int main()
     while(gets(str))
     {
        fun(str,a);
-       printf("%s\n",a);
+       printf("%s\n",t);
     }
     return 0;
 }

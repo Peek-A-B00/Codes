@@ -14,7 +14,7 @@ using namespace std;
 #define debug(a...)          {cout<<__LINE__<<"#--> ";dbg,a; cout<<endl;}
 struct debugger
 {
-    template<typename T> debugger& operator , (const T v)
+    template<typename T> debugger& operator, (const T v)
     {
         cout<<v<<" ";
         return *this;
@@ -33,11 +33,11 @@ bool com(int a, int b)  /// Returns true while priority of A > priority of B
 
 int main()
 {
-    freopen("AlgorithmSort.in","r",stdin);
+//    freopen("AlgorithmSort.in","r",stdin);
 
     int ar[SIZE];
     int i,n;
-
+    deb("Okay");
 
 
     while(1==scanf("%d",&n) && n)

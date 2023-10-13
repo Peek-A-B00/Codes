@@ -1,0 +1,25 @@
+Abstract class "Museum" CReate a 2D array to store some artwork ID and their artist's name.
+Create another array to stoere bidder ID.
+Create an interface "myInterface" which has two methods
+1.int BiddingStatus():Shows how many particular artworks in the museum are already booked for bidding and how  many are available to book.
+2.void Bidder():shows the list of bidders for each artwork.The bidder info includes bidder ID, bidder name and list of artwors they bid.
+Class "Broker" implements the interface "myInterface".
+Another class "Billing" extends "Museum" class and it had the following properties
+1.double Winner():Returns the winner who bid the highest money for each artwork.
+A main class "MuseumBroker" will have necessary methods to search a user and print the following output
+
+Sample input:
+Member ID:1
+Artwork ID:Ao1
+Bid:1000
+
+Member ID:2
+Artwork ID:Ao1
+Bid:2000
+
+Sample output:
+Artwork ID:A01
+Bidders:1 1000
+		2 2000
+
+Winner:1

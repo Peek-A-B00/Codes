@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -39,25 +38,52 @@ struct debugger
 typedef long long LL;
 const LL MOD = 1000000007;
 const double EPS = 1e-7; ///1*10^-7
-const int Size = 100;
+const int Size = 101;
 
+double dp[Size];
+int ar[Size];
+int n,s;
 
+double go(int p)
+{
+    if(p==n-1)
+        return ar[p];
+    double &r=dp[p];
+    if(r>-1)
+        return r;
+    r=0;
+    int c=0;
+    for(int i=1;i<=6;i++){
+        if(p+i<n)
+            r+=ar[p]+go(p+i);
+        else{
+            c++;
+//            debug(c,i);
+        }
+    }
+    deb(c);
+    r/=(6-c);
+    return r;
+}
 int main()
 {
-//    freopen("in.txt","r",stdin);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+//    freopen("Dp.txt","r",stdin);
 //    freopen("out.txt","w",stdout);
 
-//    int tks,ks=1;
-//    scanf("%d",&tks);
-//    while(tks--)
-//    {
-////        printf("Case %d: ",ks++);
-//    }
+    int tks,ks=1;
+    scanf("%d",&tks);
+    while(tks--)
+    {
+        cin>>n;
+        for(int i=0;i<n;i++)
+            scanf("%d",&ar[i]);
+        memset(dp,-1,sizeof dp);
+        double a=go(0);
 
-//    while(1==scanf("",&))
-//    {
-//        printf("\n");
-//    }
+        printf("Case %d: %lf\n",ks++,a);
+    }
 
     return 0;
 }

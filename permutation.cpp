@@ -8,7 +8,7 @@ int main ()
                 if(i==j||i==k||j==k){
                     continue;
                 }
-                printf("\n %d,%d,%d",i,k,j);
+                printf("%d,%d,%d\n",i,k,j);
             }
 
         }
@@ -20,7 +20,7 @@ int main ()
             if(j !=i){
                 for (k=1;k<=3;k++){
                     if (k !=i && k !=j){
-                        printf("%d,%d,%d\n",i,j,k);
+                        printf("    %d,%d,%d\n",i,j,k);
                     }
                 }
             }

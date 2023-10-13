@@ -12,8 +12,9 @@ typedef long long LL;
 
 int main()
 {
-    char c = '0';
-
+//    char c = '0';
+    char c;
+    cin>>c;
 
     if(isalpha(c)==false)
     {

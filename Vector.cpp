@@ -46,6 +46,8 @@ int main()
     debug(a.size());
     printVector(v,"value");
     v={2,3,4,5,6};
+    auto it=v.begin();
+    debug(it);
     printVector(v,"value");
 //    v.push_back(a);
 //    printVector(v,"Vector");
@@ -54,6 +56,7 @@ int main()
     {
         v.push_back(a[i]);
     }
+
     printVector(v);
     return 0;
 }
