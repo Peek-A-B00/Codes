@@ -1,15 +1,21 @@
+//#include<bits/stdC++.h>
 #include <stdio.h>
+#include <float.h>
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
+#include<iomanip>
 
-/** ---- Paknami Starts ----*/
 #include <iostream>
+#include<cmath>
 #include <string>
 #include <vector>
 #include <sstream>
 #include <algorithm>
 #include <queue>
+#include <map>
+#include<set>
+#include <unordered_map>
 using namespace std;
 
 #define deb(a)     cout<<__LINE__<<"# "<<#a<<" -> "<<a<<endl;
@@ -18,45 +24,50 @@ using namespace std;
 #define debug(a...)          {cout<<__LINE__<<"#--> ";dbg,a; cout<<endl;}
 struct debugger
 {
-    template<typename T> debugger& operator , (const T v)
+    template<typename T> debugger& operator, (const T v)
     {
         cout<<v<<" ";
         return *this;
     }
 } dbg;
-/** ---- Paknami Ends ----*/
+
+#define en "\n"
+#define spf(d) setprecision(d)<<fixed
+
 
 /*
-    if(st.find(val)!=st.end())
-    {
-
-    }
+    if(st.find(val)!=st.end()){}
 */
 
 typedef long long LL;
-const int Size = 100;
+const LL MOD = 1000000007;///1e9+7
 const double EPS = 1e-7; ///1*10^-7
+const double pi = 2*acos(0.0);
+const int Size = 101;
 
+
+void solve(int ks)
+{
+}
 int main()
 {
-///    freopen("in.txt","r",stdin);
-///    freopen("out.txt","w",stdout);
-//    int ara [100];
-//    for(int i=0; i<10; i++)
-//        ara[i]=i;
-//
-////    int s=ara.size();
-////    string s="tabassum maria";
-////    int m=9;
-////    int i=s.find(m);
-////    if(i==-1)
-////        deb(m);
-//
-//    printf("%s",str2);
+//    ios_base::sync_with_stdio(false);
+//    cin.tie(NULL);
+//    freopen("in.txt","r",stdin);
+//    freopen("out.txt","w",stdout);
 
-    char str[Size];
-    scanf("%s",&str[1]);
-    for(int i=1; i<=5;i++)
-        deb(str[i]);
+//    int tks,ks=1;
+//    cin>>tks;
+////    scanf("%d",&tks);
+//    while(tks--)
+//    {
+//          solve(ks++);
+////        printf("Case %d: ",ks++);
+//    }
+////
+//    while(1 == scanf("%d",&n) && n)
+//    {
+////        printf("\n");
+//    }
     return 0;
 }

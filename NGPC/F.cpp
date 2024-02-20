@@ -58,7 +58,8 @@ db hight(db x1,db y1,db x2,db y2)
     db b2=x2-x1;
     db c2=a2*x1;
     db d=a1*b2-a2*b1;
-    return (a1*c2-c1*a2)/d;             /// a1x+b1x=c1 & a2x+b2y=c2 -> y =(-c1*a2-(-c2)a1)/(a1*b2-a2*b1)
+    return (a1*c2-c1*a2)/d;/// a1x+b1x=c1 & a2x+b2y=c2
+                            ///-> y =(-c1*a2-(-c2)a1)/(a1*b2-a2*b1)
 
 }
 int main()

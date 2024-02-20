@@ -57,20 +57,21 @@ int main()
 //    freopen("in.txt","r",stdin);
 //    freopen("out.txt","w",stdout);
 
-    int ar[]={1,3,3,3,4,5};
+    int ar[]={2,3,6,7};
     int n=sizeof(ar)/sizeof(int);
-    int x=2;
+    int x=1;
     int l=0,r=n;
-//    int ans = -1;
+    int ans = -1;
     while(r>l)
     {
         int m=l+(r-l)/2;
         if(x>=ar[m]){
+            ans = m;
             l=m+1;
         }
         else
             r=m;
     }
-    cout<<l<<endl;
+    cout<<ans<<endl;
     return 0;
 }
